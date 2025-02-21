@@ -9,11 +9,8 @@ const refs = {
     formInput: document.querySelector('.input-field'),
     gallery: document.querySelector('.gallery')
 }
-
 const { form, formInput, gallery } = refs;
-
-    let lightbox = new SimpleLightbox('.gallery a');
-
+let lightbox = new SimpleLightbox('.gallery a');
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();

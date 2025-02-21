@@ -32,7 +32,17 @@ iziToast.error({
         return output.data.hits;
 })
         .catch(err => {
-            console.log(err);
+iziToast.error({
+    title: 'Unexpected error',
+    message: `${err}`,
+    position: 'topRight',
+    maxWidth: '432px',
+    theme: 'dark',
+    messageSize: '16',
+    backgroundColor: '#ef4040',
+    messageColor: '#fafafb',
+    iconColor: '#fafafb',
+});
             loadingIcon.classList.remove('loader');
         });
 };
