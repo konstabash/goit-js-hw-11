@@ -33,7 +33,7 @@ iziToast.error({
 })
         .catch(err => {
 iziToast.error({
-    title: 'Unexpected error',
+    title: 'Unexpected Error',
     message: `${err}`,
     position: 'topRight',
     maxWidth: '432px',
